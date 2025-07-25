@@ -1,0 +1,176 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fixed Theme */
+body {
+  background-color: #222831;
+  color: #EEEEEE;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #393E46;
+  color: #EEEEEE;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #EEEEEE;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #D2C1B6;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+}
+
+/* Resume Header */
+.resume-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
+}
+
+section h3 {
+  color: #00ADB5;
+  margin-bottom: 0.5rem;
+}
+
+/* Section link styling (apply on all screen sizes) */
+section a:link,
+section a:visited {
+  color: #78B9B5;
+  text-decoration: none;
+}
+
+section a:hover,
+section a:active {
+  color: #A8E0DD;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #393E46;
+  color: #EEEEEE;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    align-items: flex-start;
+  }
+
+  .resume-header {
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 130px;
+  }
+
+  .throughWindow-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Optional: centers the image */
+  }
+
+}
+
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Project Section Layout */
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 2rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Project Card Block Styling */
+.project-card {
+  background-color: #393E46;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Content Styling */
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  margin-bottom: 1rem;
+}
+
+.project-card a {
+  color: #00ADB5;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
